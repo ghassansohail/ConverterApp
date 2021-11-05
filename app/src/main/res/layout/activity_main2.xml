@@ -6,40 +6,114 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <ScrollView
-        android:id="@+id/scrollView3"
-        android:layout_width="143dp"
-        android:layout_height="293dp"
-        android:layout_marginStart="204dp"
-        android:layout_marginTop="100dp"
-        android:contentDescription="sjhbjhebjek"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-        </LinearLayout>
-    </ScrollView>
-
     <Button
         android:id="@+id/button14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="380dp"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="202dp"
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="110dp"
+        android:layout_height="298dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="272dp"
+            android:layout_marginEnd="144dp"
+            android:text="CheckBox" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="380dp"
+            android:layout_marginEnd="168dp"
+            android:text="Manually Typed" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+    </LinearLayout>
+
+    <LinearLayout
+
+android:layout_width="0dp"
+
+android:layout_height="wrap_content"
+
+android:layout_marginTop="32dp"
+
+android:background="@color/purple_200"
+
+android:orientation="horizontal"
+
+app:layout_constraintEnd_toEndOf="parent"
+
+app:layout_constraintHorizontal_bias="0.0"
+
+app:layout_constraintStart_toStartOf="parent"
+
+app:layout_constraintTop_toBottomOf="@+id/button14">
+
+<CheckBox
+
+    android:id="@+id/checkBox04"
+
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+
+    android:layout_weight="1"
+
+    android:text="Done" />
+
+<CheckBox
+
+    android:id="@+id/checkBox05"
+
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+
+    android:layout_weight="1"
+
+    android:text="Pending" />
+
+<CheckBox
+
+    android:id="@+id/checkBox03"
+
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+
+    android:layout_weight="1"
+
+    android:text="Read" />
+
+</LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="224dp" />
+        android:text="CheckBox"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        tools:layout_editor_absoluteY="134dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
