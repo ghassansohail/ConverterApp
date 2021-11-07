@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="409dp"
+        android:layout_height="109dp"
+        android:text="What is the emission region of the following letter?"
+        android:textColor="@color/black"
+        android:fontFamily="@font/filebold"
+        android:textSize="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDisplay"
+        android:layout_width="218dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/jannaltbold"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/buttonOption1"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="96dp"
+        android:text="Throat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDisplay" />
+
+    <Button
+        android:id="@+id/buttonOption2"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="60dp"
+        android:text="Tongue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDisplay" />
+
+    <Button
+        android:id="@+id/buttonOption3"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:text="Lips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOption1" />
+
+    <Button
+        android:id="@+id/buttonOption4"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="60dp"
+        android:text="Nose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOption2" />
+
+    <Button
+        android:id="@+id/buttonOption5"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="296dp"
+        android:text="Mouth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDisplay" />
+</androidx.constraintlayout.widget.ConstraintLayout>
