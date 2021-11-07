@@ -36,7 +36,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonArabicApp"
         android:layout_width="351dp"
         android:layout_height="101dp"
         android:fontFamily="@font/jannaltbold"

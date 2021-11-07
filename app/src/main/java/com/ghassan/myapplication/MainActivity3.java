@@ -10,11 +10,13 @@ import android.widget.TextView;
 
 public class MainActivity3 extends AppCompatActivity {
     Button convApp;
+    Button arabicApp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
         convApp= findViewById(R.id.buttonConvApp);
+        arabicApp=findViewById(R.id.buttonArabicApp);
         convApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,7 +24,16 @@ public class MainActivity3 extends AppCompatActivity {
                 startActivity(intentToMain);
             }
         });
+        arabicApp.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intentToArabic= new Intent(MainActivity3.this,MainActivity4.class);
+                startActivity(intentToArabic);
+            }
+        });
+
     }
+
 
 
 }
