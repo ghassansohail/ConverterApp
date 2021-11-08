@@ -19,25 +19,33 @@ public class MainActivity5 extends AppCompatActivity {
     TextView timer,score;
     public int i=0,answer=0;
     public double counter=0;
-    public void check(int int_random,int answer){
+    public int check(int int_rand){
+    int answr=0;
+        if(int_rand >=0 && int_rand<6)
+        {
+            answr=1;//throat
 
-        if(int_random>=0 || int_random<6)
-        {answer=1;//throat
-            counter += 10.0;}
-        else if(int_random>=6 || int_random<23)
-        {answer=2;//tongue
-            counter += 10.0;}
-        else if(int_random==23)
-        {answer=4;//Nose
-            counter += 10.0;}
-        else if(int_random>=24 || int_random<27)
-        {answer=3;//Lips
-            counter += 10.0;}
-        else if(int_random>=27 || int_random<30)
-        {answer=5;//Mouth
-            counter += 10.0;}
+        }
+        else if(int_rand>=6 && int_rand<23)
+        {
+            answr=2;//tongue
 
+        }
+        else if(int_rand==23)
+        {
+            answr=4;//Nose
 
+        }
+        else if(int_rand>=24 && int_rand<27)
+        {
+            answr=3;//Lips
+
+        }
+        else if(int_rand>=27 && int_rand<30)
+        {
+            answr=5;//Mouth
+        }
+        return answr;
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +65,7 @@ public class MainActivity5 extends AppCompatActivity {
             Random rand = new Random();
             int int_random = rand.nextInt(30);
             display.setText(letters[int_random]);
-            check(int_random,answer);
+            answer=check(int_random);
 
 
                     option1.setOnClickListener(new View.OnClickListener(){
@@ -65,25 +73,17 @@ public class MainActivity5 extends AppCompatActivity {
                                 public void onClick(View v) {
                             if (answer == 1) {
                                 option1.setBackgroundColor(Color.GREEN);
-                                option2.setBackgroundColor(Color.RED);
-                                option3.setBackgroundColor(Color.RED);
-                                option4.setBackgroundColor(Color.RED);
-                                option5.setBackgroundColor(Color.RED);
                                 int int_random = rand.nextInt(30);
-                                check(int_random,answer);
+                                answer=check(int_random);
                                 display.setText(letters[int_random]);
                                 score.setText(Double.toString(counter));
-
-
+                                counter += 10.0;
                             } else {
                                 int int_random = rand.nextInt(30);
-                                check(int_random);
+                                answer=check(int_random);
                                 display.setText(letters[int_random]);
                                 option1.setBackgroundColor(Color.BLACK);
-                                option2.setBackgroundColor(Color.BLACK);
-                                option3.setBackgroundColor(Color.BLACK);
-                                option4.setBackgroundColor(Color.BLACK);
-                                option5.setBackgroundColor(Color.BLACK);
+
                             }
                         }
                 });
@@ -95,24 +95,17 @@ public class MainActivity5 extends AppCompatActivity {
                             if(answer==2)
                             {
                             option2.setBackgroundColor(Color.GREEN);
-                            option1.setBackgroundColor(Color.RED);
-                            option3.setBackgroundColor(Color.RED);
-                            option4.setBackgroundColor(Color.RED);
-                            option5.setBackgroundColor(Color.RED);
-                                counter += 10.0;
+
                                 int int_random = rand.nextInt(30);
-                                check(int_random);
+                                answer=check(int_random);
                                 display.setText(letters[int_random]);
                                 score.setText(Double.toString(counter));
+                                counter += 10.0;
                             } else {
                                 int int_random = rand.nextInt(30);
-                                check(int_random);
+                                answer=check(int_random);
                                 display.setText(letters[int_random]);
-                                option1.setBackgroundColor(Color.BLACK);
                                 option2.setBackgroundColor(Color.BLACK);
-                                option3.setBackgroundColor(Color.BLACK);
-                                option4.setBackgroundColor(Color.BLACK);
-                                option5.setBackgroundColor(Color.BLACK);
                             }
                         }
                     });
@@ -124,24 +117,16 @@ public class MainActivity5 extends AppCompatActivity {
                             if(answer==3)
                             {
                             option3.setBackgroundColor(Color.GREEN);
-                            option2.setBackgroundColor(Color.RED);
-                            option1.setBackgroundColor(Color.RED);
-                            option4.setBackgroundColor(Color.RED);
-                            option5.setBackgroundColor(Color.RED);
-                            counter += 10.0;
                                 int int_random = rand.nextInt(30);
-                                check(int_random);
+                                answer=check(int_random);
                                 display.setText(letters[int_random]);
                                 score.setText(Double.toString(counter));
+                                counter += 10.0;
                             } else {
                                 int int_random = rand.nextInt(30);
-                                check(int_random);
+                                answer=check(int_random);
                                 display.setText(letters[int_random]);
-                                option1.setBackgroundColor(Color.BLACK);
-                                option2.setBackgroundColor(Color.BLACK);
                                 option3.setBackgroundColor(Color.BLACK);
-                                option4.setBackgroundColor(Color.BLACK);
-                                option5.setBackgroundColor(Color.BLACK);
                             }
                         }
                     });
@@ -153,25 +138,17 @@ public class MainActivity5 extends AppCompatActivity {
                             if(answer==4)
                             {
                             option4.setBackgroundColor(Color.GREEN);
-                            option2.setBackgroundColor(Color.RED);
-                            option3.setBackgroundColor(Color.RED);
-                            option1.setBackgroundColor(Color.RED);
-                            option5.setBackgroundColor(Color.RED);
-                            counter += 10.0;
+
                                 int int_random = rand.nextInt(30);
-                                check(int_random);
+                                answer=check(int_random);
                                 display.setText(letters[int_random]);
                                 score.setText(Double.toString(counter));
+                                counter += 10.0;
                             } else {
                                 int int_random = rand.nextInt(30);
-                                check(int_random);
+                                answer=check(int_random);
                                 display.setText(letters[int_random]);
-                                option1.setBackgroundColor(Color.BLACK);
-                                option2.setBackgroundColor(Color.BLACK);
-                                option3.setBackgroundColor(Color.BLACK);
                                 option4.setBackgroundColor(Color.BLACK);
-                                option5.setBackgroundColor(Color.BLACK);
-
 
                             }
                         }
@@ -184,24 +161,18 @@ public class MainActivity5 extends AppCompatActivity {
                             if(answer==5)
                             {
                             option5.setBackgroundColor(Color.GREEN);
-                            option2.setBackgroundColor(Color.RED);
-                            option3.setBackgroundColor(Color.RED);
-                            option4.setBackgroundColor(Color.RED);
-                            option1.setBackgroundColor(Color.RED);
-                            counter += 10.0;
+
+
                                 int int_random = rand.nextInt(30);
-                                check(int_random);
+                                answer=check(int_random);
                                 display.setText(letters[int_random]);
                                 score.setText(Double.toString(counter));
+                                counter += 10.0;
 
                             } else {
                                 int int_random = rand.nextInt(30);
-                                check(int_random);
+                                answer=check(int_random);
                                 display.setText(letters[int_random]);
-                                option1.setBackgroundColor(Color.BLACK);
-                                option2.setBackgroundColor(Color.BLACK);
-                                option3.setBackgroundColor(Color.BLACK);
-                                option4.setBackgroundColor(Color.BLACK);
                                 option5.setBackgroundColor(Color.BLACK);
                             }
                         }
