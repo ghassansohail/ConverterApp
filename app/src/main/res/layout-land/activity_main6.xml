@@ -23,7 +23,7 @@
         android:id="@+id/textViewMarks"
         android:layout_width="252dp"
         android:layout_height="185dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="100dp"
         android:fontFamily="@font/filebold"
         android:gravity="center"
         android:text=" "
@@ -31,6 +31,7 @@
         android:textColor="@android:color/holo_blue_light"
         android:textSize="55dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -39,11 +40,12 @@
         android:id="@+id/buttonShare"
         android:layout_width="388dp"
         android:layout_height="59dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="#263CB6"
         android:backgroundTintMode="add"
         android:text="Share"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMarks" />
 </androidx.constraintlayout.widget.ConstraintLayout>
