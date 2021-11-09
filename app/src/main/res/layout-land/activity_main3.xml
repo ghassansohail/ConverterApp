@@ -7,17 +7,44 @@
     android:background="#FF9800"
     tools:context=".MainActivity3">
 
+    <Button
+        android:id="@+id/buttonGitLog"
+        android:layout_width="351dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/jannaltbold"
+        android:onClick="gitLog"
+        android:text="Git Log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConvApp" />
+
+    <Button
+        android:id="@+id/buttonGitProfile"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/jannaltbold"
+        android:onClick="gitProfile"
+        android:text="Git Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="UsingOnClickInXml" />
+
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="356dp"
-        android:layout_height="397dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="345dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="@font/filebold"
-        android:text="Welcome to App Box. Please Select the App You'd Like to Open."
+        android:text="Name: Ghassan Sohail \n Roll Number: BSEF18A525 "
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,23 +52,27 @@
         android:id="@+id/buttonConvApp"
         android:layout_width="351dp"
         android:layout_height="101dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="292dp"
         android:backgroundTint="@color/black"
         android:backgroundTintMode="src_atop"
         android:text="Converter App"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2" />
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonArabicApp"
         android:layout_width="351dp"
         android:layout_height="101dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/jannaltbold"
         android:text="مخارج الحروف"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/buttonConvApp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

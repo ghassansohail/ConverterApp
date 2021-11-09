@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="410dp"
-        android:layout_height="121dp"
+        android:layout_width="448dp"
+        android:layout_height="103dp"
         android:fontFamily="@font/filebold"
         android:text="Please Enter the Letter you want to Search for Below:"
         android:textAlignment="center"
@@ -29,6 +29,7 @@
         android:autoText="true"
         android:ems="10"
         android:fontFamily="@font/jannaltbold"
+        android:freezesText="true"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="50dp"
@@ -38,40 +39,41 @@
 
     <TextView
         android:id="@+id/textViewResult"
-        android:layout_width="323dp"
-        android:layout_height="285dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="293dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="112dp"
         android:fontFamily="@font/filebold"
+        android:freezesText="true"
         android:text="Result"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonSubmit"
-        android:layout_width="113dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="568dp"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
         android:onClick="onSubmit"
         android:text="Submit"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextLetter" />
 
     <Button
         android:id="@+id/buttonTest"
-        android:layout_width="183dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="156dp"
+        android:layout_width="188dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
         android:text="Test"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLetter" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
