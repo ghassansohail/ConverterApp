@@ -16,7 +16,7 @@ import java.util.Random;
 
 public class MainActivity5 extends AppCompatActivity {
     Button option1, option2, option3, option4, option5,quit,next ;
-    TextView timer,score;
+    TextView timer,score,display;
     public int i=0,answer=0;
     public double counter=0;
     public int check(int int_rand){
@@ -47,6 +47,9 @@ public class MainActivity5 extends AppCompatActivity {
         }
         return answr;
     }
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +61,7 @@ public class MainActivity5 extends AppCompatActivity {
         option5=findViewById(R.id.buttonOption5);
 
         quit=findViewById(R.id.buttonQuit);
-        TextView display= findViewById(R.id.textDisplay);
+         display= findViewById(R.id.textDisplay);
          score= findViewById(R.id.textViewScore);
         String letters[] = {"أ", "ة", "ع ", "ح", "غ", "خ", "ق", "ک", "ج", "ش", "ی", "ض", "ل", "ر", "ت", "د", "ط", "ظ", "ذ ", "ث", "ص", "ز", "س", "م", "ف", "ب", "و", "باَ", " بوُ ", "بىِ"};
 
@@ -76,13 +79,28 @@ public class MainActivity5 extends AppCompatActivity {
                                 int int_random = rand.nextInt(30);
                                 answer=check(int_random);
                                 display.setText(letters[int_random]);
-                                score.setText(Double.toString(counter));
                                 counter += 10.0;
+                                score.setText(Double.toString(counter));
+                                i=i+1;
+                                if(i==10){
+                                    Intent intentToMain6= new Intent(MainActivity5.this, MainActivity6.class);
+                                    startActivity(intentToMain6);
+                                    score.setText(Integer.toString(i));
+                                    
+                                }
+
                             } else {
                                 int int_random = rand.nextInt(30);
                                 answer=check(int_random);
                                 display.setText(letters[int_random]);
                                 option1.setBackgroundColor(Color.BLACK);
+
+                                i=i+1;
+                                if(i==10){
+                                    Intent intentToMain6= new Intent(MainActivity5.this, MainActivity6.class);
+                                    startActivity(intentToMain6);
+                                    score.setText(Integer.toString(i));
+                                }
 
                             }
                         }
@@ -99,13 +117,25 @@ public class MainActivity5 extends AppCompatActivity {
                                 int int_random = rand.nextInt(30);
                                 answer=check(int_random);
                                 display.setText(letters[int_random]);
-                                score.setText(Double.toString(counter));
                                 counter += 10.0;
+                                score.setText(Double.toString(counter));
+                                i=i+1;
+                                if(i==10){
+                                    Intent intentToMain6= new Intent(MainActivity5.this, MainActivity6.class);
+                                    startActivity(intentToMain6);
+                                    score.setText(Integer.toString(i));
+                                }
                             } else {
                                 int int_random = rand.nextInt(30);
                                 answer=check(int_random);
                                 display.setText(letters[int_random]);
                                 option2.setBackgroundColor(Color.BLACK);
+                                i=i+1;
+                                if(i==10){
+                                    Intent intentToMain6= new Intent(MainActivity5.this, MainActivity6.class);
+                                    startActivity(intentToMain6);
+                                    score.setText(Integer.toString(i));
+                                }
                             }
                         }
                     });
@@ -120,13 +150,25 @@ public class MainActivity5 extends AppCompatActivity {
                                 int int_random = rand.nextInt(30);
                                 answer=check(int_random);
                                 display.setText(letters[int_random]);
-                                score.setText(Double.toString(counter));
                                 counter += 10.0;
+                                score.setText(Double.toString(counter));
+                                i=i+1;
+                                if(i==10){
+                                    Intent intentToMain6= new Intent(MainActivity5.this, MainActivity6.class);
+                                    startActivity(intentToMain6);
+                                    score.setText(Integer.toString(i));
+                                }
                             } else {
                                 int int_random = rand.nextInt(30);
                                 answer=check(int_random);
                                 display.setText(letters[int_random]);
                                 option3.setBackgroundColor(Color.BLACK);
+                                i=i+1;
+                                if(i==10){
+                                    Intent intentToMain6= new Intent(MainActivity5.this, MainActivity6.class);
+                                    startActivity(intentToMain6);
+                                    score.setText(Integer.toString(i));
+                                }
                             }
                         }
                     });
@@ -142,14 +184,25 @@ public class MainActivity5 extends AppCompatActivity {
                                 int int_random = rand.nextInt(30);
                                 answer=check(int_random);
                                 display.setText(letters[int_random]);
-                                score.setText(Double.toString(counter));
                                 counter += 10.0;
+                                score.setText(Double.toString(counter));
+                                i=i+1;
+                                if(i==10){
+                                    Intent intentToMain6= new Intent(MainActivity5.this, MainActivity6.class);
+                                    startActivity(intentToMain6);
+                                    score.setText(Integer.toString(i));
+                                }
                             } else {
                                 int int_random = rand.nextInt(30);
                                 answer=check(int_random);
                                 display.setText(letters[int_random]);
                                 option4.setBackgroundColor(Color.BLACK);
-
+                                i=i+1;
+                                if(i==10){
+                                    Intent intentToMain6= new Intent(MainActivity5.this, MainActivity6.class);
+                                    startActivity(intentToMain6);
+                                    score.setText(Integer.toString(i));
+                                }
                             }
                         }
                     });
@@ -166,14 +219,26 @@ public class MainActivity5 extends AppCompatActivity {
                                 int int_random = rand.nextInt(30);
                                 answer=check(int_random);
                                 display.setText(letters[int_random]);
-                                score.setText(Double.toString(counter));
                                 counter += 10.0;
+                                score.setText(Double.toString(counter));
+                                i=i+1;
+                                if(i==10){
+                                    Intent intentToMain6= new Intent(MainActivity5.this, MainActivity6.class);
+                                    startActivity(intentToMain6);
+                                    score.setText(Integer.toString(i));
+                                }
 
                             } else {
                                 int int_random = rand.nextInt(30);
                                 answer=check(int_random);
                                 display.setText(letters[int_random]);
                                 option5.setBackgroundColor(Color.BLACK);
+                                i=i+1;
+                                if(i==10){
+                                    Intent intentToMain6= new Intent(MainActivity5.this, MainActivity6.class);
+                                    startActivity(intentToMain6);
+                                    score.setText(Integer.toString(i));
+                                }
                             }
                         }
                     });
