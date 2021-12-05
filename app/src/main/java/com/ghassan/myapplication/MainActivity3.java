@@ -1,11 +1,12 @@
 package com.ghassan.myapplication;
-
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,13 +17,29 @@ public class MainActivity3 extends AppCompatActivity {
     Button convApp;
     Button arabicApp;
     Toolbar toolbar;
-    private Object Menu;
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu3, menu);
         return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_fav:
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+            case R.id.action_one:
+                TextView textView = findViewById(R.id.textView2);
+                textView.setText("Action task was clicked");
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +50,7 @@ public class MainActivity3 extends AppCompatActivity {
         toolbar= findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
+
 
         convApp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +66,6 @@ public class MainActivity3 extends AppCompatActivity {
                 startActivity(intentToArabic);
             }
         });
-
 
 
 

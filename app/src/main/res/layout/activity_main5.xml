@@ -16,6 +16,20 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDisplay" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="#130F0F"
+        app:title="App Box"
+        app:titleTextColor="@color/white" />
 
     <TextView
         android:id="@+id/textView4"
@@ -23,21 +37,21 @@
         android:layout_height="99dp"
         android:fontFamily="@font/filebold"
         android:text="What is the emission region of the following letter?"
-        android:textColor="@color/black"
+        android:textColor="@color/purple_200"
         android:textSize="34dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <TextView
         android:id="@+id/textDisplay"
-        android:layout_width="218dp"
-        android:layout_height="236dp"
+        android:layout_width="289dp"
+        android:layout_height="273dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/jannaltbold"
         android:freezesText="true"
         android:text=" "
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -107,5 +121,5 @@
         android:textAlignment="center"
         android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

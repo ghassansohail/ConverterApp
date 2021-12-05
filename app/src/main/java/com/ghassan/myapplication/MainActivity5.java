@@ -2,7 +2,9 @@ package com.ghassan.myapplication;
 
 
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 
 import android.content.Intent;
@@ -63,6 +65,14 @@ public class MainActivity5 extends AppCompatActivity {
         quit=findViewById(R.id.buttonQuit);
          display= findViewById(R.id.textDisplay);
          score= findViewById(R.id.textViewScore);
+
+
+        Toolbar toolbar= findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar ab = getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
+
+
         String letters[] = {"أ", "ة", "ع ", "ح", "غ", "خ", "ق", "ک", "ج", "ش", "ی", "ض", "ل", "ر", "ت", "د", "ط", "ظ", "ذ ", "ث", "ص", "ز", "س", "م", "ف", "ب", "و", "باَ", " بوُ ", "بىِ"};
 
             Random rand = new Random();

@@ -5,6 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity4">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="#130F0F"
+        app:title="ToolBar"
+        app:titleTextColor="@color/white" />
 
     <TextView
         android:id="@+id/textView3"
@@ -13,11 +27,11 @@
         android:fontFamily="@font/filebold"
         android:text="Please Enter the Letter you want to Search for Below:"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/purple_200"
         android:textSize="34dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
 
     <EditText
@@ -39,19 +53,19 @@
 
     <TextView
         android:id="@+id/textViewResult"
-        android:layout_width="293dp"
-        android:layout_height="228dp"
+        android:layout_width="263dp"
+        android:layout_height="177dp"
         android:layout_marginTop="112dp"
         android:fontFamily="@font/filebold"
         android:freezesText="true"
         android:text="Result"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/purple_200"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.963"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <Button
         android:id="@+id/buttonSubmit"

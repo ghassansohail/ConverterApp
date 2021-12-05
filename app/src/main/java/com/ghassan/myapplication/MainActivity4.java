@@ -1,6 +1,8 @@
 package com.ghassan.myapplication;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -60,6 +62,13 @@ public class MainActivity4 extends AppCompatActivity {
         letter = findViewById(R.id.editTextLetter);
         result = findViewById(R.id.textViewResult);
         test = findViewById(R.id.buttonTest);
+        Toolbar toolbar= findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar ab = getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
+
+
+
 
         test.setOnClickListener(new View.OnClickListener(){
             @Override

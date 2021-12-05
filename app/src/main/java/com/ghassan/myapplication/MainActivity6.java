@@ -1,6 +1,8 @@
 package com.ghassan.myapplication;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +21,12 @@ public class MainActivity6 extends AppCompatActivity {
         setContentView(R.layout.activity_main6);
         marks= findViewById(R.id.textViewMarks);
         share= findViewById(R.id.buttonShare);
+        Toolbar toolbar= findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar ab = getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
+
+
         Intent intent=getIntent();
         score=intent.getStringExtra("value");
         marks.setText(score);
