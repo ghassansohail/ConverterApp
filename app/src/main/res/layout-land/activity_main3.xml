@@ -7,16 +7,32 @@
     android:background="#FF9800"
     tools:context=".MainActivity3">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="#130F0F"
+        app:title="App Box"
+        app:titleTextColor="@color/white" />
+
     <Button
         android:id="@+id/buttonGitLog"
         android:layout_width="351dp"
-        android:layout_height="101dp"
-        android:layout_marginTop="108dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@color/black"
         android:fontFamily="@font/jannaltbold"
         android:onClick="gitLog"
         android:text="Git Log"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/buttonConvApp" />
 
@@ -28,6 +44,7 @@
         android:fontFamily="@font/jannaltbold"
         android:onClick="gitProfile"
         android:text="Git Profile"
+        android:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.026"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,13 +62,14 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="34sp"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonConvApp"
         android:layout_width="351dp"
-        android:layout_height="101dp"
+        android:layout_height="80dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="4dp"
         android:backgroundTint="@color/black"
@@ -61,17 +79,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <Button
         android:id="@+id/buttonArabicApp"
         android:layout_width="351dp"
-        android:layout_height="101dp"
+        android:layout_height="80dp"
         android:layout_marginTop="8dp"
+        android:backgroundTint="@color/black"
         android:fontFamily="@font/jannaltbold"
         android:text="مخارج الحروف"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/buttonConvApp" />
 
