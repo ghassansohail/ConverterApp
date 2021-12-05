@@ -5,16 +5,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-//import android.widget.Toolbar;
+import android.view.Menu;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity3 extends AppCompatActivity {
     Button convApp;
     Button arabicApp;
     Toolbar toolbar;
+    private Object Menu;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu3, menu);
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +48,7 @@ public class MainActivity3 extends AppCompatActivity {
                 startActivity(intentToArabic);
             }
         });
+
 
 
 
