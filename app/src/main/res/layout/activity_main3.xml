@@ -7,11 +7,25 @@
     android:background="#FF9800"
     tools:context=".MainActivity3">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="#130F0F"
+        app:title="ToolBar"
+        app:titleTextColor="@color/white" />
+
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="397dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="368dp"
+        android:layout_height="110dp"
         android:layout_marginBottom="120dp"
         android:fontFamily="@font/filebold"
         android:text="Welcome to App Box. Please Select the App You'd Like to Open."
@@ -20,13 +34,15 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonConvApp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <Button
         android:id="@+id/buttonGitLog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
         android:fontFamily="@font/jannaltbold"
         android:onClick="gitLog"
         android:text="Git Log"
@@ -53,6 +69,8 @@
         android:id="@+id/buttonArabicApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+
         android:fontFamily="@font/jannaltbold"
         android:text="مخارج الحروف"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,6 +81,7 @@
         android:id="@+id/buttonGitProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
         android:fontFamily="@font/jannaltbold"
         android:onClick="gitProfile"
         android:text="Git Profile"
