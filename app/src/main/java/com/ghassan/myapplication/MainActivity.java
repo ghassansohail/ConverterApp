@@ -4,12 +4,16 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +27,29 @@ public class MainActivity extends AppCompatActivity {
     float mValue;
 
     boolean MK, KM, CF, FC;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu3, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_fav:
+                Intent intent = new Intent(this, MainActivity4.class);
+                startActivity(intent);
+                return true;
+
+            case R.id.action_one:
+                Toast.makeText(getApplicationContext(),"Git",Toast.LENGTH_LONG).show();
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

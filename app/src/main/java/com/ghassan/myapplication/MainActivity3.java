@@ -32,6 +32,8 @@ public class MainActivity3 extends AppCompatActivity {
             case R.id.action_fav:
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
+                return true;
+
             case R.id.action_one:
                 TextView textView = findViewById(R.id.textView2);
                 textView.setText("Action task was clicked");

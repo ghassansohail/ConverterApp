@@ -6,15 +6,42 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity6 extends AppCompatActivity {
 
     TextView marks;
     Button share;
     String score;
+
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu3, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_fav:
+                Intent intent = new Intent(this, MainActivity3.class);
+                startActivity(intent);
+                return true;
+
+            case R.id.action_one:
+                Toast.makeText(getApplicationContext(),"Share",Toast.LENGTH_LONG).show();
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
